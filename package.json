@@ -1,0 +1,24 @@
+{
+  "fitbit": {
+    "appUUID": "1f970993-9e90-4c84-b62d-64ef8cf5115a",
+    "appType": "clockface",
+    "appDisplayName": "circleOclock",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "meson",
+      "gemini",
+      "mira"
+    ],
+    "i18n": {
+      "en": {
+        "name": "circleOclock"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~4.1.0"
+  }
+}
