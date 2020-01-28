@@ -12,6 +12,8 @@ const highlightMinutes = (minutes) => {
     const minuteValue = parseInt(slot.id.slice(1), 10);
     if (minuteValue <= minutes) {
       slot.style.opacity = 1;
+    } else {
+      slot.style.opacity = 0.5;
     }
   });
 }
@@ -21,6 +23,8 @@ const highlightHours = (hours) => {
     const hourValue = parseInt(slot.id.slice(1), 10);
     if (hourValue <= hours) {
       slot.style.opacity = 1;
+    } else {
+      slot.style.opacity = 0.5;
     }
   });
 }
