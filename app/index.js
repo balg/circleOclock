@@ -7,8 +7,7 @@ const hoursImg = document.getElementById("hours");
 const minutesImg = document.getElementById("minutes");
 
 const highlightMinutes = (minutes) => {
-  // TODO: Add graphics
-  // minutesImg.image = `m${minutes}.png`
+  minutesImg.image = `m${minutes}.png`
 }
 
 const highlightHours = (hours) => {
