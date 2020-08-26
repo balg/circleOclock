@@ -1,6 +1,6 @@
 <svg id="face" viewport-fill="black">
   <!--  Minutes  -->
-  <image id="minutes" href="m0.png" x="0" y="0" width="100%" height="100%" />
+  <image id="minutes" href="m0.png" x="0" y="0" width="100%" height="100%" fill="#FFFFFF" />
   <!--  Hours  -->
-  <image id="hours" href="h1.png" x="0" y="0" width="100%" height="100%" />
+  <image id="hours" href="h1.png" x="0" y="0" width="100%" height="100%" fill="#FFFFFF" />
 </svg>
