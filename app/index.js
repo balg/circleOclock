@@ -17,6 +17,6 @@ const highlightHours = (hours) => {
 clock.ontick = (evt) => {
   let hours = evt.date.getHours();
   hours = hours % 12 || 12;
-  highlightHours(hours);
-  highlightMinutes(evt.date.getMinutes());
+  // highlightHours(hours);
+  // highlightMinutes(evt.date.getMinutes());
 }
