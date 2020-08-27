@@ -1,9 +1,12 @@
+.color {
+  fill: #14D3F5;
+}
+
 .minutes {
   x: 10;
   y: 10;
   width: 280;
   height: 280;
-  fill: #14D3F5;
   arc-width: 10;
   sweep-angle: 180;
 }
@@ -13,7 +16,6 @@
   y: 30;
   width: 240;
   height: 240;
-  fill: #14D3F5;
   arc-width: 10;
   sweep-angle: 180;
 }

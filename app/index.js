@@ -3,20 +3,22 @@ import document from "document";
 
 clock.granularity = "minutes";
 
-const hoursImg = document.getElementById("hours");
-const minutesImg = document.getElementById("minutes");
+const hoursArc = document.getElementById("hours");
+const minutesArc = document.getElementById("minutes");
 
 const highlightMinutes = (minutes) => {
-  minutesImg.image = `m${minutes}.png`
+  // 1 minute = 6 degrees
+  minutesArc.sweepAngle = minutes * 6
 }
 
 const highlightHours = (hours) => {
-  hoursImg.image = `h${hours}.png`
+  // 1 hour = 30 degrees
+  hoursArc.sweepAngle = hours * 30
 }
 
 clock.ontick = (evt) => {
   let hours = evt.date.getHours();
   hours = hours % 12 || 12;
-  // highlightHours(hours);
-  // highlightMinutes(evt.date.getMinutes());
+  highlightHours(hours);
+  highlightMinutes(evt.date.getMinutes());
 }
