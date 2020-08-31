@@ -25,7 +25,6 @@ clock.ontick = (evt) => {
 // Received message containing settings data
 messaging.peerSocket.addEventListener("message", function (evt) {
   settings[evt.data.key] = evt.data.value;
-  console.log(JSON.stringify(settings, null, 2));
   setColor(settings.color);
 });
 
