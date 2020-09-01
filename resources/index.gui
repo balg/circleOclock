@@ -1,6 +1,10 @@
 <svg id="face" viewport-fill="black">
-  <!--  Minutes  -->
-  <image id="minutes" href="m0.png" x="0" y="0" width="100%" height="100%" />
-  <!--  Hours  -->
-  <image id="hours" href="h1.png" x="0" y="0" width="100%" height="100%" />
+  <!--  Background  -->
+  <rect x="0" y="0" width="100%" height="100%" opacity=".5" class="color" />
+  <!--  Minutes Arc  -->
+  <arc id="minutes" class="minutes color" />
+  <!--  Hours Arc  -->
+  <arc id="hours" class="hours color" />
+  <!--  Mask  -->
+  <image href="mask.png" x="0" y="0" width="100%" height="100%" />
 </svg>
