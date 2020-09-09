@@ -3,6 +3,7 @@ import * as messaging from "messaging";
 import * as fs from "fs";
 import clock from "clock";
 import document from "document";
+import { colors, gradients } from '../common/colors';
 
 clock.granularity = "minutes";
 
@@ -37,7 +38,7 @@ function loadSettings() {
     return fs.readFileSync(SETTINGS_FILE, SETTINGS_TYPE);
   } catch (ex) {
     return {
-      color: '#14D3F5'
+      color: 'cyan'
     };
   }
 }
@@ -58,8 +59,15 @@ function highlightHours(hours) {
 };
 
 function setColor(color) {
-  const coloredItems = document.getElementsByClassName("color");
+  const coloredItems = document.getElementsByClassName("gradient");
+  let color1 = colors.cyan.color
+  let color2 = colors.cyan.color
+  if (color) {
+    color1 = gradients[color]?.color || colors[color]?.color || color
+    color2 = gradients[color]?.color2 || colors[color]?.color || color
+  }
   coloredItems.forEach((item) => {
-    item.style.fill = color;
+    item.gradient.colors.c1 = color1;
+    item.gradient.colors.c2 = color2;
   });
 };
